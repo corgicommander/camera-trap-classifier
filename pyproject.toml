@@ -1,0 +1,20 @@
+[project]
+name = "camera-trap-classifier"
+version = "0.2.1"
+description = "Local HTTP service that classifies camera-trap photos with Google SpeciesNet"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi>=0.142.2",
+    "ml-dtypes>=0.5",
+    "pycountry>=26.2.16",
+    "speciesnet>=5.0.5",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+camera-trap-classifier = "camera_trap_classifier:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"

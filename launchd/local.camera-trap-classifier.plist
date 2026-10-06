@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>local.camera-trap-classifier</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/YOUR_USER/camera-trap-classifier/.venv/bin/camera-trap-classifier</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/YOUR_USER/camera-trap-classifier</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>CTC_HOST</key>
+    <string>0.0.0.0</string>
+    <key>CTC_PORT</key>
+    <string>8765</string>
+    <key>CTC_COUNTRY</key>
+    <string>US</string>
+    <key>CTC_ADMIN1_REGION</key>
+    <string>CA</string>
+    <key>PYTHONWARNINGS</key>
+    <string>ignore</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>30</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/YOUR_USER/Library/Logs/camera-trap-classifier.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/YOUR_USER/Library/Logs/camera-trap-classifier.log</string>
+</dict>
+</plist>
